@@ -1,0 +1,78 @@
+$main-bg-color: #dadadaa2;
+$nav-color: #57a9b0;
+$acc-btn: #a5e6ea;
+$bg-color: #cccc;
+$txt-black: #000000;
+$txt-white: #ffffff;
+
+$font-primary: "Raleway", serif;
+$font-secondary: "meursault-variable", serif;
+$font-tertiary: "Open Sans", serif;
+
+body {
+  background-color: $main-bg-color;
+  font-family: $font-primary;
+}
+
+//intro
+.intro-section {
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.profile-img {
+  width: 200px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.text-content {
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+  color: #ffffff;
+}
+
+hr {
+  border: none;
+  border-top: 4px solid #fdfdfd;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: normal;
+  color: #4a9aa2;
+  line-height: 1.5;
+}
+
+//about
+.card {
+  border-radius: 20px;
+  background-color: $bg-color;
+
+  p{
+    font-family: $font-tertiary;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section .card {
+    padding: 1.5rem;
+    margin: 0 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .about-section p {
+    margin-bottom: 1.2rem;
+  }
+}

@@ -1,3 +1,253 @@
 /* Your styles go here */
+@use "footer.scss";
+@use "navbar.scss";
+
+$nav-color: #57a9b0;
+$main-bg-color: #dadadaa2;
+$acc-btn: #a5e6ea;
+$bg-color: #cccc;
+$txt-black: #000000;
+$txt-white: #ffffff;
+
+$font-primary: "Raleway", serif;
+$font-secondary: "meursault-variable", serif;
+$font-tertiary: "Open Sans", serif;
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://use.typekit.net/rcj6rag.css");
+
+body {
+  background-color: $main-bg-color;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: $font-primary;
+  font-variation-settings: "wght" 600, "wdth" 100;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+// Hero section
+.hero {
+  background: url("../images/hero.jpeg") no-repeat center center;
+  background-size: cover;
+  color: $txt-white;
+  padding: 100px 0;
+  margin-top: 1rem;
+  font-family: $font-primary;
+
+  &::before {
+    content: "";
+    background: url("../images/hero.jpeg") no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll;
+    z-index: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+  }
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.313);
+  padding: 70px 30px;
+  border-radius: 12px;
+}
+
+.btn-outline-light {
+  border-width: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $nav-color;
+    color: $txt-white;
+  }
+}
+
+//languages section
+.languages {
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  background-color: $bg-color;
+  padding: 0 1rem;
+  margin-top: 5rem;
+
+  h2 {
+    color: #333;
+    margin-bottom: 0.25rem;
+  }
+
+  h4 {
+    font-family: $font-secondary;
+    color: $nav-color;
+  }
+}
+
+.accordion-item {
+  border: none;
+  background-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.accordion-button {
+  background-color: $acc-btn;
+  color: $txt-black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 1rem 1.25rem;
+  border-radius: 12px !important;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  justify-content: center;
+  text-align: center;
+
+  &:hover {
+    background-color: #e9e9e9;
+    transform: translateY(-1px);
+    color: $nav-color;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.15);
+  }
+
+  &:not(.collapsed) {
+    background-color: #e0e0e0;
+    box-shadow: inset 0 -1px 0 rgba(87, 169, 176, 0.08);
+    color: $nav-color;
+    border: 1px solid $nav-color;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.accordion-body {
+  background-color: $txt-white;
+  padding: 1.25rem 1.5rem;
+  margin-top: -0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-size: 1rem;
+  font-family: $font-tertiary;
+  text-align: center;
+}
+
+.accordion-body ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.accordion-body li {
+  padding: 0.5rem 0;
+  font-weight: 500;
+  color: $txt-black;
+  border-bottom: 1px solid #eee;
+  font-family: $font-tertiary;
+}
+
+.accordion-body li:last-child {
+  border-bottom: none;
+}
+
+.accordion small {
+  font-weight: 400;
+  color: #888;
+}
+
+//card style
+.project-card {
+  position: relative;
+  height: 200px;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.proj-btn {
+  background-color: #72d9e2;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration-line: none;
+  display: inline-block;
+
+  &:hover {
+    background-color: darken($acc-btn, 40%);
+    transform: scale(1.05);
+  }
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.project-card > * {
+  position: relative;
+  z-index: 2;
+}
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-title {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+//media queries
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+
+    &::before {
+      background-size: contain;
+    }
+
+    .container {
+      padding: 20px 0;
+    }
+  }
+
+  .hero-overlay {
+    padding: 15px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}

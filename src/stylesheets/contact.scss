@@ -1,0 +1,74 @@
+$nav-color: #5ba9a4;
+$bg-color: #cccc;
+$input-bg: #eef6f9;
+
+$light-gray-transparent: rgba(220, 220, 220, 0.5);
+$font-tertiary: "Open Sans", serif;
+
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+h2 {
+  color: $nav-color;
+}
+
+// Form Section
+.form-box {
+  background-color: $light-gray-transparent;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  .form-label {
+    font-weight: 600;
+    color: $nav-color;
+  }
+
+  .input-light {
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+  textarea.input-light {
+    resize: none;
+  }
+
+  .btn {
+    border: 1px solid $nav-color;
+    color: $nav-color;
+
+    &:hover {
+      color: #0b706a;
+      border: 1px solid #0b706a;
+    }
+  }
+}
+
+.contact-box {
+  background-color: $light-gray-transparent;
+  border-radius: 6px;
+
+  h4 {
+    color: $nav-color;
+  }
+
+  i {
+    font-size: 1.2rem;
+    color: $nav-color;
+  }
+
+  span {
+    font-size: 0.95rem;
+    text-align: center;
+    font-family: $font-tertiary;
+  }
+
+  hr {
+    margin: 10px 0 20px 0;
+    border: 1.25px solid $nav-color;
+  }
+
+  p {
+    color: black;
+  }
+}
