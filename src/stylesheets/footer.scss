@@ -1,0 +1,26 @@
+//footer
+$nav-color: #57a9b0;
+$txt-white: #ffffff;
+$bg-color: #dadadaa2;
+$font-primary: "Raleway", serif;
+$font-secondary: "meursault-variable", serif;
+$font-tertiary: "Open Sans", serif;
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://use.typekit.net/rcj6rag.css");
+
+footer {
+  background-color: $nav-color;
+  font-family: $font-secondary;
+
+  a {
+    color: $txt-white;
+
+    &:hover {
+      color: $bg-color;
+    }
+  }
+}
