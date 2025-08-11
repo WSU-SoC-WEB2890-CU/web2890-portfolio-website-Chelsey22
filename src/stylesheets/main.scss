@@ -40,7 +40,6 @@ html {
   background-size: cover;
   color: $txt-white;
   padding: 100px 0;
-  margin-top: 1rem;
   font-family: $font-primary;
 
   &::before {
@@ -74,6 +73,7 @@ html {
   &:hover {
     background-color: $nav-color;
     color: $txt-white;
+    transform: scale(1.05);
   }
 }
 
@@ -189,7 +189,7 @@ html {
 }
 
 .proj-btn {
-  background-color: #72d9e2;
+  background-color: #4cafb8;
   color: white;
   border: none;
   padding: 0.5rem 1rem;

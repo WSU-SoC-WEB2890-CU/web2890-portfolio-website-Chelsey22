@@ -12,11 +12,6 @@ $font-secondary: "meursault-variable", serif;
 .navbar {
   background-color: $nav-color;
 
-  .logo {
-    max-width: 100px;
-    height: auto;
-  }
-
   .nav-item a {
     color: $txt-white;
     font-family: $font-secondary;

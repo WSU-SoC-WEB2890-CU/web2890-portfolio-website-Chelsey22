@@ -65,23 +65,22 @@
         <h2 class="fw-bold mb-1 text-center">Behind the Code</h2>
         <h4 class="lead mb-0 text-center">My Tech Stack</h4>
       </div>
-
-      <div class="accordion shadow-sm" id="accordionPanelsStayOpen">
+      <div class="accordion shadow-sm" id="accordionExample">
+        
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
               class="accordion-button"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseOne"
+              data-bs-target="#collapseOne"
               aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseOne"
+              aria-controls="collapseOne"
             >
               <i class="bi bi-code-slash me-2"></i> Languages
             </button>
           </h2>
-
-          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <ul class="list-unstyled mb-0 text-center">
                 <li>Assembly</li>
@@ -103,16 +102,16 @@
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseTwo"
+              data-bs-target="#collapseTwo"
               aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseTwo"
+              aria-controls="collapseTwo"
             >
-              <i class="bi bi-layers me-2"></i>Frameworks
+              <i class="bi bi-layers me-2"></i> Frameworks
             </button>
           </h2>
-          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <ul class="list-unstyled mb-0">
+              <ul class="list-unstyled mb-0 text-center">
                 <li>Bootstrap</li>
                 <li>Django</li>
                 <li>Node.js</li>
@@ -130,18 +129,18 @@
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseThree"
+              data-bs-target="#collapseThree"
               aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseThree"
+              aria-controls="collapseThree"
             >
-              <i class="bi bi-database me-2"></i>Databases
+              <i class="bi bi-database me-2"></i> Databases
             </button>
           </h2>
-          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <ul>
+              <ul class="list-unstyled mb-0 text-center">
                 <li>SQL</li>
-                <li>noSQL</li>
+                <li>NoSQL</li>
               </ul>
             </div>
           </div>
@@ -153,16 +152,16 @@
               class="accordion-button collapsed"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseFour"
+              data-bs-target="#collapseFour"
               aria-expanded="false"
-              aria-controls="panelsStayOpen-collapseFour"
+              aria-controls="collapseFour"
             >
-              <i class="bi bi-tools me-2"></i>Tools
+              <i class="bi bi-tools me-2"></i> Tools
             </button>
           </h2>
-          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <ul class="list-unstyled mb-0">
+              <ul class="list-unstyled mb-0 text-center">
                 <li>Git <small class="text-muted">(Version Control)</small></li>
                 <li>VS Code <small class="text-muted">(Code Editor)</small></li>
                 <li>MySQL Workbench <small class="text-muted">(DB Client)</small></li>
@@ -179,34 +178,51 @@
         <h2 class="text-center mb-5">Featured Projects</h2>
         <div class="row g-4">
           <div class="col-md-6">
-            <div class="project-card" style="background-image: url('images/UX.jpeg')">
-              <h3 class="project-title">UX UI Project</h3>
-            </div>
+            <a href="https://chelsey-web2620-final.netlify.app" class="text-decoration-none">
+              <div class="project-card" style="background-image: url('images/planner.jpeg')">
+                <h3 class="project-title">Online Planner</h3>
+              </div>
+            </a>
           </div>
+
           <div class="col-md-6">
-            <div class="project-card" style="background-image: url('images/expenses.jpeg')">
-              <h3 class="project-title">Expense Tracker</h3>
-            </div>
+            <a href="https://chelseymarie22.pythonanywhere.com" class="text-decoration-none">
+              <div class="project-card" style="background-image: url('images/expenses.jpeg')">
+                <h3 class="project-title">Expense Tracker</h3>
+              </div>
+            </a>
           </div>
+
           <div class="col-md-6">
-            <div class="project-card" style="background-image: url('images/task_management.jpeg')">
-              <h3 class="project-title">Task Management</h3>
-            </div>
+            <a href="https://web3350-final.netlify.app" class="text-decoration-none">
+              <div class="project-card" style="background-image: url('images/task_management.jpeg')">
+                <h3 class="project-title">Task Management</h3>
+              </div>
+            </a>
           </div>
+
           <div class="col-md-6">
-            <div class="project-card" style="background-image: url('images/car.jpeg')">
-              <h3 class="project-title">CarDeal</h3>
-            </div>
+            <a href="https://car-deal-p1.netlify.app" class="text-decoration-none">
+              <div class="project-card" style="background-image: url('images/car.jpeg')">
+                <h3 class="project-title">CarDeal</h3>
+              </div>
+            </a>
           </div>
+
           <div class="col-md-6">
-            <div class="project-card" style="background-image: url('images/forest.jpeg')">
-              <h3 class="project-title">Fear The Paranormal</h3>
-            </div>
+            <a href="https://fear-the-paranormal.netlify.app/" class="text-decoration-none">
+              <div class="project-card" style="background-image: url('images/forest.jpeg')">
+                <h3 class="project-title">Fear The Paranormal</h3>
+              </div>
+            </a>
           </div>
+
           <div class="col-md-6">
-            <div class="project-card" style="background-image: url('images/menu.jpeg')">
-              <h3 class="project-title">Restaurant Ordering</h3>
-            </div>
+            <a href="https://web3350-react-meal.netlify.app" class="text-decoration-none">
+              <div class="project-card" style="background-image: url('images/menu.jpeg')">
+                <h3 class="project-title">Restaurant Ordering</h3>
+              </div>
+            </a>
           </div>
         </div>
         <div class="text-center mt-5">

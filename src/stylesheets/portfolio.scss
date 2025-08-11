@@ -20,6 +20,11 @@ h1 {
   color: $nav-color;
 }
 
+hr {
+  border: none;
+  border-top: 4px solid $nav-color;
+  margin: 20px 0;
+}
 .projects-container {
   display: flex;
   flex-direction: column;
@@ -31,15 +36,20 @@ h1 {
 .project {
   display: flex;
   max-width: 1000px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .project img {
+  border-radius: 10px;
   width: 50%;
   object-fit: cover;
 }
 
 .project-content {
+  border-radius: 10px;
   padding: 20px;
   width: 100%;
   display: flex;
@@ -64,19 +74,27 @@ h1 {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-}
 
-.buttons a {
-  text-decoration: none;
-  background-color: #009cbe;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-weight: bold;
+  a {
+    text-decoration: none;
+    background-color: #4cafb8;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    &:hover {
+      background-color: darken($acc-btn, 40%);
+      transform: scale(1.05);
+    }
+  }
 }
 
 .buttons a.secondary {
-  background-color: #444;
+  background-color: darken($acc-btn, 40%);
+
+  &:hover {
+    background-color: rgb(53, 52, 52);
+  }
 }
 
 @media (max-width: 576px) {
