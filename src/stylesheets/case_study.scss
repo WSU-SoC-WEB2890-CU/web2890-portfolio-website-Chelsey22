@@ -1,0 +1,46 @@
+$primary-font: Copperplate, Copperplate Gothic Light;
+$nav-color: #5ba9a4;
+
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Lilita+One&display=swap");
+
+.btn {
+  color: $nav-color;
+  border: 1px solid $nav-color;
+
+  &:hover {
+    color: #0b706a;
+    border: 1px solid #0b706a;
+  }
+}
+
+.desc,
+.overview,
+.goals,
+.challenge,
+.outcome {
+  font-family: $primary-font;
+}
+
+.mockup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.mockup img {
+  max-width: 700px;
+  width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(111, 8, 13, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mockup-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(138, 43, 226, 0.6);
+}
