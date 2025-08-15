@@ -38,20 +38,43 @@ body {
 h1 {
   font-size: 48px;
   margin: 0;
-  color: #ffffff;
+  color: $nav-color;
 }
 
-hr {
-  border: none;
-  border-top: 4px solid #fdfdfd;
-  margin: 20px 0;
-}
+// hr {
+//   border: none;
+//   border-top: 4px solid $nav-color;
+//   margin: 20px 0;
+// }
 
 h3 {
   font-size: 24px;
   font-weight: normal;
   color: #257e87;
   line-height: 1.5;
+}
+hr {
+  border: none;
+  border-top: 4px solid $nav-color;
+  margin: 20px 0;
+  transform: translateX(50px);
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(75px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.5;
+  }
 }
 
 //about
